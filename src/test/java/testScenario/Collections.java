@@ -128,6 +128,16 @@ public class Collections {
 			ExcelUtils.writeExcel();
 			logger.log(Status.INFO, "Values written successfully");
 		}
+		else if (browserType.equalsIgnoreCase("chrome")) {
+			ExcelUtils.excelConfig();
+			for (rowNum = 1, item = 0; rowNum <= list.size(); rowNum++, item++) {
+
+				cell = ExcelUtils.sheet.createRow(rowNum).createCell(1);
+				cell.setCellValue(resultSet[item]);
+			}
+			ExcelUtils.writeExcel();
+			logger.log(Status.INFO, "Values written successfully");
+		}
 
 	}
 
