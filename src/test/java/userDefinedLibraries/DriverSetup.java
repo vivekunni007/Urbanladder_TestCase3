@@ -3,6 +3,7 @@ package userDefinedLibraries;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 
@@ -21,7 +22,8 @@ public class DriverSetup {
 	    if(browsertype.equalsIgnoreCase("chrome")) {
 	      
 	      exePath = "E:\\Softwares\\Selenium\\chromedriver\\chromedriver.exe";
-	      
+	      ChromeOptions options=new ChromeOptions();
+	      options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
 	      System.setProperty("webdriver.chrome.driver", exePath);
 	      driver = new ChromeDriver();                          
 	      }
@@ -35,7 +37,7 @@ public class DriverSetup {
 	      }  
 	    
 	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	    // Launch browsers and direct it to the Base URL
 	    driver.get(url);
 	    driver.manage().deleteAllCookies();

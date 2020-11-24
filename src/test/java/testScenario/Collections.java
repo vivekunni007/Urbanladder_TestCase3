@@ -51,9 +51,10 @@ public class Collections {
 	@BeforeClass
 	public void driverconfig(String browser) {
 
+		
+		driver = DriverSetup.driverInstantiate(browser);
 		report = ExtentReportsManager.generateExtentReport();
 		logger = report.createTest("Being At Home Collections test");
-		driver = DriverSetup.driverInstantiate(browser);
 
 	}
 
