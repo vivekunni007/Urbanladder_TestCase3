@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testScenario.Collections">
+        <methods>
+          <include name="driverconfig"/>
+          <include name="collections"/>
+        </methods>
+      </class> <!-- testScenario.Collections -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

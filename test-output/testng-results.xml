@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Functional Testing" duration-ms="20946" started-at="2020-11-24T15:23:32Z" finished-at="2020-11-24T15:23:53Z">
+    <groups>
+    </groups>
+    <test name="Test 1" duration-ms="20946" started-at="2020-11-24T15:23:32Z" finished-at="2020-11-24T15:23:53Z">
+      <class name="testScenario.Collections">
+        <test-method status="PASS" signature="driverconfig(java.lang.String)[pri:0, instance:testScenario.Collections@27c20538]" name="driverconfig" is-config="true" duration-ms="9342" started-at="2020-11-24T20:53:32Z" finished-at="2020-11-24T20:53:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverconfig -->
+        <test-method status="PASS" signature="log()[pri:0, instance:testScenario.Collections@27c20538]" name="log" duration-ms="29" started-at="2020-11-24T20:53:41Z" finished-at="2020-11-24T20:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log -->
+        <test-method status="PASS" signature="retrievePaths()[pri:1, instance:testScenario.Collections@27c20538]" name="retrievePaths" duration-ms="18" started-at="2020-11-24T20:53:41Z" finished-at="2020-11-24T20:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrievePaths -->
+        <test-method status="PASS" signature="closePopUp()[pri:2, instance:testScenario.Collections@27c20538]" name="closePopUp" duration-ms="7396" started-at="2020-11-24T20:53:41Z" finished-at="2020-11-24T20:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopUp -->
+        <test-method status="PASS" signature="collections()[pri:3, instance:testScenario.Collections@27c20538]" name="collections" duration-ms="2385" started-at="2020-11-24T20:53:49Z" finished-at="2020-11-24T20:53:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collections -->
+        <test-method status="PASS" signature="writeToExcel(java.lang.String)[pri:4, instance:testScenario.Collections@27c20538]" name="writeToExcel" duration-ms="1136" started-at="2020-11-24T20:53:51Z" finished-at="2020-11-24T20:53:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeToExcel -->
+        <test-method status="PASS" signature="closeDriver()[pri:5, instance:testScenario.Collections@27c20538]" name="closeDriver" duration-ms="594" started-at="2020-11-24T20:53:52Z" finished-at="2020-11-24T20:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testScenario.Collections -->
+    </test> <!-- Test 1 -->
+  </suite> <!-- Functional Testing -->
+</testng-results>

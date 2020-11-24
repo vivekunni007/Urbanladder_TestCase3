@@ -1,0 +1,6 @@
+{
+"collections":"//span[@class='topnav_itemname'][contains(text(),'Collections')]",
+"beingAtHomeList":"//*[@id=\"topnav_wrapper\"]/ul/li[10]/div/div/ul/li[1]/ul/li/a/span",
+"close":"//*[@id=\"authentication_popup\"]/div[1]/div/div[2]/a[1]"
+
+}
