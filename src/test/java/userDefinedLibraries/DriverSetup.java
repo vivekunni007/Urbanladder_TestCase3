@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.opera.OperaDriver;
-
+import org.openqa.selenium.opera.OperaOptions;
 
 public class DriverSetup {
 
@@ -21,12 +21,15 @@ public class DriverSetup {
 	    if(browsertype.equalsIgnoreCase("chrome")) {
 	      
 	      exePath = "E:\\Softwares\\Selenium\\chromedriver\\chromedriver.exe";
+	      
 	      System.setProperty("webdriver.chrome.driver", exePath);
 	      driver = new ChromeDriver();                          
 	      }
 	    else if(browser.equalsIgnoreCase("opera")) {
 	      
 	      exePath = "E:\\Softwares\\Selenium\\operadriver\\operadriver.exe";
+	      OperaOptions options=new OperaOptions();
+	      options.setBinary("C:\\Users\\user\\AppData\\Local\\Programs\\Opera\\opera.exe");
 	      System.setProperty("webdriver.opera.driver", exePath);
 	      driver = new OperaDriver();                          
 	      }  
